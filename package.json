@@ -1,0 +1,42 @@
+{
+  "name": "@leo/hello-influxdb",
+  "version": "0.0.0",
+  "description": "example for influxdb",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo721120/hello-influxdb.git"
+  },
+  "author": "leojan@alum.ccu.edu.tw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo721120/hello-influxdb/issues"
+  },
+  "homepage": "https://github.com/leo721120/hello-influxdb#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "jest": "^24.9.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "influx": "^5.5.1"
+  },
+  "jest": {
+    "browser": false,
+    "testMatch": [
+      "**/test/**/*.[j]s?(x)"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 60,
+        "statements": 50
+      }
+    }
+  }
+}
